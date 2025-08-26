@@ -1,0 +1,12 @@
+{
+  "name": "ProdOps-MultiTier-App",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+  "postCreateCommand": "bash /workspaces/ProdOps-MultiTier-App/scripts/setup.sh",
+  "remoteUser": "vscode"
+}
